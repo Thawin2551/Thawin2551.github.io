@@ -136,7 +136,7 @@ footer {
 /*ข้างบนยังไม่ได้แก้*/
 /*แก้ใหม่*/
 
-
+/* Set ทั้งเว็บ*/
 * {
     margin: 0;
     padding: 0;
@@ -148,7 +148,7 @@ footer {
     font-family: sans-serif;
     text-decoration: none;
 }
-
+/* Set แค่ใน <Body>*/
 body {
     font-family: Arial, sans-serif; 
     line-height: 1.6;
@@ -173,41 +173,40 @@ header .container {
     margin: 0 auto;
     padding: 0 1rem;
 }
-
+/* จัด header "Kaonueng Portfolio"*/
 header h1 {
     font-size: 1.5rem;
     transition: color 2.0s;
 }
-
+/* แค่จัดใน list_ul_li เฉยๆ */
 header nav ul {
     display: flex;
     gap: 1rem;
     list-style: none;
 }
 
-header nav ul li {
+/* จัดตัวลิ้ง About Me , Education , Contact , Skills*/
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: color 2.0s;
 }
 
-header nav ul li a:hover {
-    color: #00bcd4;
-}
 
-/*บนๆ*/
+
+/* box ข้าวนึ่งมาเยือน */
 .Introduce {
     margin-top: 20px;
 }
-
+/*หัวข้อทั้ง 4 หัวข้อ เลือกแค่มาจัตตำแหน่ง Topic เฉยๆ*/
 .Topic {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+/*ส่วนเนื้อหาถัดจาก About Kaonueng*/
 .explain {
     text-align: center;
 }
@@ -225,16 +224,17 @@ header nav ul li a:hover {
     gap: 1rem;
     margin-top: 1rem;
 }
-
+/* เล่นกับ div*/
 .container-school div {
     text-align: center;
     max-width: 300px;
 }
+/* เลือกแค่หัวข้อ Education */
 .educate {
     margin-top: 20px;
     font-size: 30px;
 }
-/*contact */
+/*contact ทุกอย่างยกเว้นหัวข้อ Kaonueng-Contact*/
 .contact-icons {
     display: flex;
     justify-content: center;
@@ -255,7 +255,7 @@ header nav ul li a:hover {
     gap: 0.5rem;
 }
 
-/* แก้ใน a */
+/* แก้ใน a รูป อีกที*/
 .contact-icons a img {
     width: 50px;
     height: 50px;
@@ -269,11 +269,12 @@ header nav ul li a:hover {
     gap: 2rem;
     flex-wrap: wrap;
 }
-
+/* รูป ้ HTML , CSS*/
 .skill-image {
     text-align: center;
 }
 
+/* เครื่องหมาย CopyRight ข้างล่าง*/
 /*  footer All About Kaonueng */
 footer {
     text-align: center;
@@ -283,29 +284,31 @@ footer {
 }
 
 /* responsive */
+/*จัดให้ จอ ย่อตาม*/
 / @media (max-width: 768px) {
     header .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
+    /* ให้ พวก list ที่ไม่ใช่ <a> เรียงเป็นตอนลึกตอนย่อจอ*/
     header nav ul {
         flex-direction: column;
         gap: 0.5rem;
     }
-
+    /* ให้เรียงเป็นตอนลึกตอนย่อจอ*/
     .container-school {
         flex-direction: column;
     }
-
+    /* ให้เรียงเป็นตอนลึกตอนย่อจอ*/
     .contact-icons {
         flex-direction: column;
         align-items: center;
     }
 }
 
-/* Mobile*/
+/* จัด Responive ในโทรศัพท์*/
+/*จัดให้ตอนย่อจอ Font ย่อขยายตาม*/
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.2rem;
